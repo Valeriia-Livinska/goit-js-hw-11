@@ -129,7 +129,6 @@ function renderGalleryMarkup(data) {
   const finalPage = Math.ceil(totalHits / searchParams.get('per_page'));
   if (finalPage === page) {
     loadMoreBtn.classList.add('hidden');
-    toTopBtn.classList.add('hidden');
     Notify.info(
       'We are sorry, but you have reached the end of search results.'
     );
